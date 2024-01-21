@@ -8,5 +8,5 @@ import (
 
 func TestSum(t *testing.T) {
 	result := Sum(1, 1.5)
-	assert.Equal(t, 9999999, result)
+	assert.Equal(t, 2.5, result)
 }
