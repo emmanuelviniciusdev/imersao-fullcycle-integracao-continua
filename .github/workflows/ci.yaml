@@ -15,3 +15,14 @@ jobs:
       - run: go mod tidy
       - run: go test
       - run: go run main.go
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v5
+        with:
+          push: false
+          tags: emmanuelviniciusdev/imersao-fullcycle-integracao-continua:latest
