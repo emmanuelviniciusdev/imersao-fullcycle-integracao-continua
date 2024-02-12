@@ -1,0 +1,10 @@
+sonar.projectKey=project-go
+
+sonar.sources=
+sonar.exclusions=**/*_test.go
+
+sonar.tests=
+sonar.test.inclusions=**/*_test.go
+sonar.host.url=
+sonar.token=
+sonar.go.coverage.reportPaths=
